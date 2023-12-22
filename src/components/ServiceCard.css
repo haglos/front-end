@@ -1,0 +1,81 @@
+.service-card {
+    background-color: #fff;
+    height:420px;
+    justify-self: stretch;
+    box-shadow:0 3px 10px 5px rgb(0 0 0 /0.1);
+    border-radius: 2px;
+    overflow: hidden;
+
+}
+.service-card .card-head{
+    height:60%;
+}
+
+.service-card .card-head .img{
+    width:100%;
+    height:100%;
+    position:relative
+}
+.service-card .curtain{
+    width:100%;
+    height:100%;
+    background-color: rgba(41, 36, 36,0.7);
+    position: absolute;
+    top:0px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.service-card .curtain button{
+    width:120px;
+    height:40px;
+    background-color: rgb(58, 79, 175);
+    color:#fff
+}
+
+.service-card .card-head .img:hover .curtain{
+    top:0px;
+    transition: 1s;
+    background-color: rgba(41, 36, 36,0.5);
+}
+
+
+
+.service-card .card-tail{
+    display:flex;
+    padding-top:20px;
+    height:40%;
+}
+.service-card .footer-left{
+    width:25%;
+    height:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.service-card .footer-right{
+    width:75%;
+    height:100%
+    
+}
+.service-card h3{
+    font-size:1.5rem;
+    color:rgb(100,100,100);
+    margin-bottom:10px;
+}
+
+.service-card p{
+    font-size:1.1rem;
+    text-align:left;
+    color:rgb(150,150,150);
+    line-height:25px;
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+}

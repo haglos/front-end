@@ -1,0 +1,86 @@
+/*poppins font import stays here*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* declaring and using root variables in css*/
+:root {
+    --box-hover-shadow: 10px 8px 5px rgb(218, 218, 218);
+    --color-fade: rgb(240, 240, 240);
+    --color-background: #fff;
+    --color-blue: #1652f0;
+    background-color:#fff;
+}
+
+::placeholder {
+    font-size: 1.3rem;
+    padding-left: 20%
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/*general styling for all element */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+input,select{
+    padding:5px 20px 5px 20px;
+    font-size:1.1rem;
+    color:rgb(50,50,50)
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+.dashboardScreen {
+    display: grid;
+    height:100vh;
+    width:100%;
+    background: #fff;
+    grid-template-columns: 20% 60% ;
+    overflow: hidden;
+
+}
+.form_main{
+    overflow-y: scroll;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .dashboardScreen{
+      grid-template-columns: 30% 60% ;
+      overflow-y: scroll;
+    } 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dashboardScreen{
+      grid-template-columns: 1fr;
+    } 
+  }

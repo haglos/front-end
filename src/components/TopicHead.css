@@ -1,0 +1,58 @@
+
+/* styling the header*/
+
+.header {
+    display: flex;
+    margin-bottom: 60px;
+    height:65px;
+    width:100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.header h2{
+    
+}
+.header .header-box {
+    align-items: stretch;
+    width: 15px;
+    background-color: rgb(58, 79, 175);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.header .text {
+    color: rgb(58, 79, 175);
+    font-size: 2.3rem;
+}
+
+
+/* hiding this contact bar for smaller screen*/
+@media screen and (max-width: 1024px) {
+  
+    
+
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+
+   
+
+
+}
+
+@media screen and (max-width: 560px) {
+    /* styling the card section from its container */
+
+
+
+
+
+}

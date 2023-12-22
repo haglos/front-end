@@ -1,0 +1,6 @@
+/* carousel section*/
+.coureselSection {
+    height: 100vh;
+    position:relative;
+    overflow: scroll;
+}

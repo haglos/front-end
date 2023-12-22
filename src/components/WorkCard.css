@@ -1,0 +1,44 @@
+.work-image{
+    width:100%;
+    height:300px;
+    position:relative
+}
+.work-image .curtain{
+    width:100%;
+    height:100%;
+    background-color: rgba(36, 36, 36,0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.work-image:hover .curtain{
+    top:0px;
+    background-color: rgba(36, 36, 36,0.8);
+    transition: 1s all;
+}
+
+
+
+.work-image .curtain h1{
+    color:#fff
+}
+
+.work-image .curtain p{
+    color:#fff
+}
+@media screen and (max-width: 750px) {
+    
+
+    .work-image{
+        width:100%;
+        height:300px;
+        position:relative
+    }
+    
+
+   
+
+
+}

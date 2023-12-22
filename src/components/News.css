@@ -1,0 +1,33 @@
+.news{
+    background-color:rgb(240,240,240);
+    padding-top:30px;
+    padding-bottom:90px;
+}
+.news .wrapper{
+    margin-right:5%;
+    margin-left:5%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    row-gap:30px
+
+}
+/* responsiveness */
+
+@media screen and (max-width: 1024px) {
+   
+    
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .news .wrapper{
+        margin-right:2%;
+        margin-left:2%;
+        display: grid;
+        grid-template-columns: 100%;
+    
+    }
+    
+}

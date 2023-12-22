@@ -1,0 +1,232 @@
+.navContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.contact {
+    background-color: rgba(255,255,255,.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% 20px 5%;
+    border-bottom: .5px solid rgba(255,255,255,.1);
+}
+
+
+
+.navContainer  .leftList {
+    display: flex;
+    color: #fff;
+    gap: 15px;
+
+}
+
+
+
+.navContainer  .rightList {
+    display: flex;
+    color: #fff;
+    gap: 15px
+}
+
+.navContainer ul {
+    list-style-type: none;
+
+}
+
+.navContainer li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navContainer li span {
+    margin-right: 10px
+}
+
+/* navigation  */
+
+
+.navContainer .navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right:5%;
+    padding-left: 5%;
+    position: relative;
+    height: 80px;
+    color:white;
+    border-bottom: .5px solid rgba(255,255,255,.1);
+   
+}
+
+.navigation .logoContainer {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.navigation .menuContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    display: none
+}
+
+.navigation ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navigation li {
+    text-transform: capitalize;
+
+}
+
+
+/* styling the mobile menu*/
+
+.navigationMobile{
+    height:100vh;
+}
+
+
+.navigationMobile ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+    list-style-type: none;
+
+}
+
+.navigationMobile li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    
+}
+
+
+
+.mobileHideide {
+    display: none
+}
+
+
+/* hiding this contact bar for smaller screen*/
+@media screen and (max-width: 1024px) {
+    .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        gap: 10px
+    }
+
+
+    .navContainer .leftList {
+        gap: 30px;
+
+    }
+
+    .navContainer .rightList {
+        gap: 30px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .navContainer .navigation{
+        padding-right:2%;
+        padding-left: 2%;
+        background-color:rgb(20, 40, 56) ;
+    }
+   
+    
+    .contact{
+        display:none
+    }
+
+  
+    
+
+
+    
+    .navContainer .leftContact {
+        display:none
+    }
+    .navContainer .rightContact {
+        display:none
+    }
+
+    
+    
+
+    
+    
+
+    .navigation .menuContainer {
+        display: none
+    }
+    
+
+    .menu {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .navigationMobile {
+        width: 100%;
+        background-color:rgb(20, 40, 56) ;
+        position: absolute;
+        z-index: 999;
+        top: 80px;
+        transition: 3s ease-in
+    }
+
+
+    .navigationMobile ul {
+        width: 100%;
+        height:100vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        
+    
+    }
+    
+    .navigationMobile li {
+        height:70px;
+    }
+
+    
+
+
+
+
+}

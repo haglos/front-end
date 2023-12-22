@@ -1,0 +1,66 @@
+.testimony {
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.testimony .wrapper {
+    display: flex;
+}
+
+.carousels-root {
+    
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/* .testimony .carousel-root{
+    width: 100% !important;
+    margin: auto !important;
+    margin: top 3% !important;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: rgb(58, 79, 175);
+}
+.testimony .carousel .slide{
+    height:100%;
+}
+
+.testimony .carousel.carousel-slider .control-arrow{
+    background-color: transparent  !important;
+    position:absolute !important;
+}
+
+
+
+.testimony .carousel .control-dots{
+    top: 90% !important;
+    z-index:99;
+
+}
+
+.testimony .carousel .control-dots .dot{
+    box-shadow: none  !important;
+    background: #454545 !important;
+}*/
+
+
+/* hiding this contact bar for smaller screen*/
+@media screen and (max-width: 900px) {
+    .testimony .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimony .testimony-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+   
+
+
+
+
+}

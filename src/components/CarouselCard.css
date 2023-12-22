@@ -1,0 +1,110 @@
+.carouselCard {
+    height: 70vh;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carouselCard img {
+    width: 100%;
+      height: 100%;
+    opacity: .8;
+
+}
+
+.carouselContent {
+    position: absolute;
+    width: 100%;
+      height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 500;
+    color: #fff;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.carouselContent h1 {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.carouselContent span {
+    color: rgb(58, 79, 175)
+}
+
+.carouselContent p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#fff;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.carouselContent .buttonContainer {
+    width: 50%;
+    text-align: center;
+}
+
+.carouselContent button {
+    width: 120px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgb(58, 79, 175);
+    color: #fff;
+}
+
+/* hiding this contact bar for smaller screen*/
+@media screen and (max-width: 1024px) {
+
+    /*  carousel style */
+    .carouselContent span {
+        color: rgb(58, 79, 175)
+    }
+    .carouselContent .buttonContainer {
+        width: 100%;
+    }
+    .carouselContent button {}
+}
+
+@media screen and (max-width: 750px) {
+
+    /*  carousel style */
+    .carouselCard {
+        height: 60vh;
+    
+    }
+
+    .carouselContent h1 {
+        width: 100%;
+    }
+
+    .carouselContent span {
+        color: rgb(58, 79, 175)
+    }
+
+    .carouselContent p {
+        width: 90%;
+        
+    }
+
+    .carouselContent .buttonContainer {
+        width: 100%;
+    }
+
+    .carouselContent button {}
+
+
+
+
+
+}

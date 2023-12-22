@@ -1,0 +1,51 @@
+/*
+styling the progressive bar
+*/
+.progress-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.progress-text {
+    margin-bottom: 5px;
+    text-align: left;
+    color: rgb(70, 70, 70);
+    font-size: 1.2rem;
+    font-weight:400;
+}
+
+.progressive-bar {
+    width: 80%;
+    height: 30px;
+    border-radius: 2px;
+    background-color: rgb(20, 40, 56);
+    background-color: rgb(58, 79, 175);
+    overflow: hidden;
+}
+
+.progressive {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(58, 79, 175);
+    background-color: rgb(20, 40, 56);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (max-width: 750px) {
+    .progress-container {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+
+    .progressive-bar {
+        width: 100%;
+
+    }
+
+}
