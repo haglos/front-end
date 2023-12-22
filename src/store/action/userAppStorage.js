@@ -80,7 +80,7 @@ export const checkIfIsLoggedIn = () => {
           message: 'no user found'
         }
       }
-      response = await fetch(`http://localhost:8080/auth/adminbytoken`, {
+      response = await fetch(`https://back-end-xmn7.onrender.com/auth/adminbytoken`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const checkIfIsLoggedIn = () => {
 export const signup = (data) => {
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`http://localhost:8080/auth/signup`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -173,7 +173,7 @@ export const login = (data) => {
     
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/auth/login`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -225,7 +225,7 @@ export const addClient = (data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/auth/users`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/users`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -275,7 +275,7 @@ export const loadClients = () => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/auth/users`,{
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/users`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -322,7 +322,7 @@ export const loadClient = (id) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/auth/users/${id}`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/users/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -366,7 +366,7 @@ export const editClient = (id,data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/auth/users/${id}`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/users/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -413,7 +413,7 @@ export const deleteClient = (id) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/auth/users/${id}`, {
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/users/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -456,7 +456,7 @@ export const recovery = ()=>{
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/auth/recovers`,{
+      const response = await fetch(`https://back-end-xmn7.onrender.com/auth/recovers`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",
